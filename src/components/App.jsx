@@ -1,4 +1,5 @@
 import css from './App.module.css';
+import Notiflix from 'notiflix';
 import { nanoid } from 'nanoid';
 import { Component } from 'react';
 import { ContactForm } from './Form/Form';
@@ -31,7 +32,7 @@ export class App extends Component {
       contact => contact.name.toLowerCase() === name.toLowerCase()
     );
     if (isInclude) {
-      alert(`${name} is already in contact`);
+      Notiflix.Report.warning(`${name} is already in contact`);
     } else {
       this.setState(prevState => ({
         contacts: [newContact, ...prevState.contacts],
