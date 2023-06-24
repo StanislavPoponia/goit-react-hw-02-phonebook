@@ -1,7 +1,6 @@
 .Form {
     display: flex;
     flex-direction: column;
-    justify-content: start;
     gap: 10px;
     padding: 40px;
     border-radius: 4px;
