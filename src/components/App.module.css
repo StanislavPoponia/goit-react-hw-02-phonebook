@@ -1,7 +1,9 @@
-.Container {
-    width: 600px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 10px;
-    text-align: center;
-  }
+#root{
+  margin-top: 150px;
+  display: flex;
+  flexDirection: column;
+  justifyContent: center;
+  alignItems: center;
+  fontSize: 40;
+  color: #010101;
+}
