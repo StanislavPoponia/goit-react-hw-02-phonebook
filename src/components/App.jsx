@@ -33,6 +33,7 @@ export class App extends Component {
     );
     if (isInclude) {
       Notiflix.Report.warning(`${name} is already in contact`);
+      return;
     } else {
       this.setState(prevState => ({
         contacts: [newContact, ...prevState.contacts],
